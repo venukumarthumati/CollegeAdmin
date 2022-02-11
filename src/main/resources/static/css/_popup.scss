@@ -1,0 +1,39 @@
+.modal {
+  .modal-md {
+    max-width: 400px;
+  }
+  .modal-fullscreen {
+    width: 100vw;
+    max-width: none;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    overflow-y: auto;
+    .modal-content {
+      border-radius: 0;
+      .close {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        transform: translateY(-50%);
+        z-index: 999;
+      }
+      .modal-body {
+        overflow: hidden;
+        overflow-y: auto;
+      }
+    }
+  }
+  .modal-content {
+    height: 100%;
+    background: #fff;
+    position: relative;
+    .close {
+      position: absolute;
+      top: 0;
+      right: -8px;
+      transform: translateY(-50%);
+      z-index: 999;
+    }
+  }
+}
