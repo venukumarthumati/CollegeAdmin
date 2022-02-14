@@ -32,12 +32,12 @@ public class CollegeServiceImpl implements CollegeService {
 
 	@Override
 	public Page<College> pageListColleges(int page, int size, String order) {
-		 	PageDTO pageDTO = new PageDTO();
-	        pageDTO.setSize(size);
-	        pageDTO.setPage(page);
-	        pageDTO.setOrder(order);
-	        Pageable pageable = CommonUtil.getPageableInfo(pageDTO);
-	        return collegeRepository.findAll(pageable);
+		PageDTO pageDTO = new PageDTO();
+		pageDTO.setSize(size);
+		pageDTO.setPage(page);
+		pageDTO.setOrder(order);
+		Pageable pageable = CommonUtil.getPageableInfo(pageDTO);
+		return collegeRepository.findAll(pageable);
 	}
 
 }

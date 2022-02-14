@@ -1,9 +1,10 @@
-package com.theadmin.college.utils;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                package com.theadmin.college.utils;
 
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
+import org.springframework.stereotype.Component;
 
 import com.theadmin.college.constants.CommonEntityConstants;
 import com.theadmin.college.dto.PageDTO;
@@ -11,6 +12,7 @@ import com.theadmin.college.dto.PageDTO;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
+@Component
 public final class CommonUtil {
 
     public static Pageable getPageableInfo(PageDTO pageDTO) {

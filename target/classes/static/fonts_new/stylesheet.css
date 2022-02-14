@@ -1,0 +1,77 @@
+@font-face {
+  font-family: "Akkurat-Mono";
+  src: url("Akkurat-Mono.eot");
+  src: url("./Akkurat-Mono.eot?#iefix") format("embedded-opentype"),
+    url("./Akkurat-Mono.woff2") format("woff2"),
+    url("./Akkurat-Mono.woff") format("woff"),
+    url("./Akkurat-Mono.ttf") format("truetype"),
+    url("./Akkurat-Mono.svg#Akkurat-Mono") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Yellix";
+  src: url("./Yellix-Medium.eot");
+  src: url("./Yellix-Medium.eot?#iefix") format("embedded-opentype"),
+    url("./Yellix-Medium.woff2") format("woff2"),
+    url("./Yellix-Medium.woff") format("woff"),
+    url("./Yellix-Medium.ttf") format("truetype"),
+    url("./Yellix-Medium.svg#Yellix-Medium") format("svg");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Yellix";
+  src: url("./Yellix-Light.eot");
+  src: url("./Yellix-Light.eot?#iefix") format("embedded-opentype"),
+    url("./Yellix-Light.woff2") format("woff2"),
+    url("./Yellix-Light.woff") format("woff"),
+    url("./Yellix-Light.ttf") format("truetype"),
+    url("./Yellix-Light.svg#Yellix-Light") format("svg");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Yellix";
+  src: url("./Yellix-Bold.eot");
+  src: url("./Yellix-Bold.eot?#iefix") format("embedded-opentype"),
+    url("./Yellix-Bold.woff2") format("woff2"),
+    url("./Yellix-Bold.woff") format("woff"),
+    url("./Yellix-Bold.ttf") format("truetype"),
+    url("./Yellix-Bold.svg#Yellix-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Yellix";
+  src: url("./Yellix-SemiBold.eot");
+  src: url("./Yellix-SemiBold.eot?#iefix") format("embedded-opentype"),
+    url("./Yellix-SemiBold.woff2") format("woff2"),
+    url("./Yellix-SemiBold.woff") format("woff"),
+    url("./Yellix-SemiBold.ttf") format("truetype"),
+    url("./Yellix-SemiBold.svg#Yellix-SemiBold") format("svg");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Yellix";
+  src: url("./Yellix-Regular.eot");
+  src: url("./Yellix-Regular.eot?#iefix") format("embedded-opentype"),
+    url("./Yellix-Regular.woff2") format("woff2"),
+    url("./Yellix-Regular.woff") format("woff"),
+    url("./Yellix-Regular.ttf") format("truetype"),
+    url("./Yellix-Regular.svg#Yellix-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}

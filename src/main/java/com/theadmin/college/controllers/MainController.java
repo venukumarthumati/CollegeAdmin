@@ -1,4 +1,3 @@
-
 package com.theadmin.college.controllers;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -27,6 +26,7 @@ public class MainController {
 		switch (page.toLowerCase()) {
 		case "addcollege":
 			model.addAttribute("addCollegeUrl", urlMetaData.ADD_NEW_COLLEGE);
+			model.addAttribute("collegeListPageUrl","urlMetaData.GET_COLLEGE_LIST");
 			break;
 		default:
 			model.addAttribute("url", "http://localhost:8080");

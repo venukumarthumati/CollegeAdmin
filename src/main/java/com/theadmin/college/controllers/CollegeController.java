@@ -28,7 +28,6 @@ public class CollegeController {
 
 	@PostMapping("/add")
 	public @ResponseBody ApiResponse2 createCollege(@RequestBody CollegeOnboardingDTO collegeOnboardingDTO) {
-		log.info("Entered into add college api");
 		return collegeService.saveCollege(collegeOnboardingDTO);
 	}
 

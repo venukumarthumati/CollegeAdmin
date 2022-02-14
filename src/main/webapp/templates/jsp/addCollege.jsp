@@ -265,6 +265,10 @@
 					collegeMail : collegeEmail
 				}),
 				beforeSend : function(xhr) {
+					setAuthTokenInReqHeader(xhr);
+					setCsrfTokenInRequestHeader(xhr);
+					 
+					
 				},
 				success : function(result, status, xhr) {
 					$("#success_refundNotification").modal('show');

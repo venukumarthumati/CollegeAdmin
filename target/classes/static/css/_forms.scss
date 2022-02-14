@@ -1,0 +1,164 @@
+form {
+  fieldset {
+    padding: 10px;
+    legend {
+      margin-bottom: 0.5rem;
+      font-size: 1.2rem;
+      font-weight: 600;
+      flex: 1;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .checkbox {
+        background-color: #e1e2e6;
+        padding: 5px 10px 5px 0px;
+        .custom-control-input {
+          left: 7px;
+          top: 2px;
+        }
+        label {
+          color: #827e7e;
+          &::before {
+            top: 5px;
+          }
+          &::after {
+            top: 8px;
+          }
+          &.custom-control-label {
+            padding-top: 5px;
+          }
+        }
+        input[type="checkbox"]:checked + label {
+          &::after {
+            top: 8px;
+          }
+        }
+      }
+    }
+  }
+  .form-group {
+    margin-bottom: 25px;
+    label {
+      /*position: absolute;
+      pointer-events: none;
+      left: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      transition: 0.2s ease all;*/
+      font-size: 13px;
+      color: #676767;
+      letter-spacing: 0.5px;
+    }
+    .custom-checkbox {
+      .custom-control-input {
+        left: -4px;
+        z-index: 10;
+      }
+    }
+    .form-control {
+      font-size: 16px;
+      font-weight: 500;
+      border: 1px solid #acacac;
+      padding: 0.3em 1.5em 0.233em;
+      border-radius: 4px;
+      letter-spacing: 0.18px;
+      color: #333333;
+      background: transparent;
+      min-height: 50px;
+    }
+    .form_fields {
+      position: relative;
+      // width: 100%;
+      .form-control {
+        font-size: 15px;
+        font-weight: 400;
+        border: 1px solid #ebebeb;
+        padding: 1.3em 1.5em 0.233em;
+        border-radius: 4px;
+        letter-spacing: 0.18px;
+        color: #333333;
+        background: transparent;
+        min-height: 50px;
+        &.error {
+          border-color: red;
+        }
+        &:focus,
+        &.visited {
+          outline: 0;
+          box-shadow: none;
+          background: #eeeef0;
+        }
+        &:focus ~ label,
+        &.visited ~ label {
+          top: 10px;
+          left: 16px;
+          font-size: 11px;
+          background: #eeeef0;
+          padding: 0 5px;
+        }
+      }
+      label {
+        &.selected {
+          top: 10px;
+          left: 16px;
+          font-size: 11px;
+          background: #eeeef0;
+          padding: 0 5px;
+        }
+      }
+      .select2-container {
+        min-height: 50px;
+        min-width: 100%;
+        .select2-selection--single,
+        .select2-selection--multiple {
+          min-height: 50px;
+          display: flex;
+          align-items: flex-end;
+          border: 1px solid #acacac;
+          ul {
+            li {
+              font-size: 13px;
+            }
+          }
+          .select2-selection__rendered {
+            padding-left: 18px;
+            font-size: 15px;
+            max-width: 100%;
+          }
+          .select2-selection__arrow {
+            height: 100%;
+          }
+        }
+      }
+      &.form_textArea {
+        textarea {
+          resize: none;
+        }
+        label {
+          top: 15%;
+        }
+      }
+      option {
+        color: #000000;
+      }
+    }
+    .err_text {
+      color: red;
+      letter-spacing: 0.5px;
+      font-size: 11px;
+      text-transform: capitalize;
+      font-style: italic;
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  form {
+    fieldset {
+      legend {
+        font-size: 0.8rem;
+      }
+    }
+  }
+}
